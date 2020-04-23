@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "basic_cap", "basic_dump\basic_dump.vcxproj", "{F47AE0DB-2774-47F5-8184-54519F2EDC8B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "save_dump", "save_dump\save_dump.vcxproj", "{003D36AF-39C4-436C-9865-F233F8096D95}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "read_dump", "save_dump\save_dump.vcxproj", "{003D36AF-39C4-436C-9865-F233F8096D95}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "send_pack", "send_pack\send_pack.vcxproj", "{E9408339-B867-4E9F-976D-D442D0BB2D90}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "read_file", "read_file\read_file.vcxproj", "{6C85F7D9-5D77-4D1D-83DC-7E237058B59C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "write_file", "read_file\read_file.vcxproj", "{6C85F7D9-5D77-4D1D-83DC-7E237058B59C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "core", "core\core.vcxproj", "{DD636A72-65E8-4BA7-A973-F4F8098C8E35}"
 EndProject
@@ -18,6 +18,10 @@ EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pyext", "pyext\pyext.pyproj", "{DBF67392-B751-40C8-80D1-6BD4E74F5A5F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{F13ABDD5-16A0-41DD-BCAE-24801A6EDD42}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "get_proc", "get_proc\get_proc.vcxproj", "{BF073F29-8F53-4707-B733-BA05B9758518}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "analysis", "analysis\analysis.vcxproj", "{96C3C8C2-244B-4454-B293-2B10797E437E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,6 +111,26 @@ Global
 		{F13ABDD5-16A0-41DD-BCAE-24801A6EDD42}.Release|x64.Build.0 = Release|x64
 		{F13ABDD5-16A0-41DD-BCAE-24801A6EDD42}.Release|x86.ActiveCfg = Release|Win32
 		{F13ABDD5-16A0-41DD-BCAE-24801A6EDD42}.Release|x86.Build.0 = Release|Win32
+		{BF073F29-8F53-4707-B733-BA05B9758518}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{BF073F29-8F53-4707-B733-BA05B9758518}.Debug|x64.ActiveCfg = Debug|x64
+		{BF073F29-8F53-4707-B733-BA05B9758518}.Debug|x64.Build.0 = Debug|x64
+		{BF073F29-8F53-4707-B733-BA05B9758518}.Debug|x86.ActiveCfg = Debug|Win32
+		{BF073F29-8F53-4707-B733-BA05B9758518}.Debug|x86.Build.0 = Debug|Win32
+		{BF073F29-8F53-4707-B733-BA05B9758518}.Release|Any CPU.ActiveCfg = Release|Win32
+		{BF073F29-8F53-4707-B733-BA05B9758518}.Release|x64.ActiveCfg = Release|x64
+		{BF073F29-8F53-4707-B733-BA05B9758518}.Release|x64.Build.0 = Release|x64
+		{BF073F29-8F53-4707-B733-BA05B9758518}.Release|x86.ActiveCfg = Release|Win32
+		{BF073F29-8F53-4707-B733-BA05B9758518}.Release|x86.Build.0 = Release|Win32
+		{96C3C8C2-244B-4454-B293-2B10797E437E}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{96C3C8C2-244B-4454-B293-2B10797E437E}.Debug|x64.ActiveCfg = Debug|x64
+		{96C3C8C2-244B-4454-B293-2B10797E437E}.Debug|x64.Build.0 = Debug|x64
+		{96C3C8C2-244B-4454-B293-2B10797E437E}.Debug|x86.ActiveCfg = Debug|Win32
+		{96C3C8C2-244B-4454-B293-2B10797E437E}.Debug|x86.Build.0 = Debug|Win32
+		{96C3C8C2-244B-4454-B293-2B10797E437E}.Release|Any CPU.ActiveCfg = Release|Win32
+		{96C3C8C2-244B-4454-B293-2B10797E437E}.Release|x64.ActiveCfg = Release|x64
+		{96C3C8C2-244B-4454-B293-2B10797E437E}.Release|x64.Build.0 = Release|x64
+		{96C3C8C2-244B-4454-B293-2B10797E437E}.Release|x86.ActiveCfg = Release|Win32
+		{96C3C8C2-244B-4454-B293-2B10797E437E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

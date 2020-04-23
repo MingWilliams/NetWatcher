@@ -2,18 +2,14 @@
 
 #define WIN32_LEAN_AND_MEAN             // 从 Windows 头文件中排除极少使用的内容
 // Windows 头文件
-#include <windows.h>
-#include <Iprtrmib.h>
-#include <Psapi.h>
-#include <Iprtrmib.h>
-#include<iostream>
-#include <ws2def.h>
 #include <WinSock2.h>
+#include <windows.h>
+#include <iphlpapi.h>
+#include <Iprtrmib.h>
 
 #pragma comment(lib,"Iphlpapi.Lib")
 #pragma comment(lib,"Psapi.lib")
 #pragma comment(lib,"WS2_32.lib")
-
 
 typedef struct {
 	DWORD dwState; //连接状态

@@ -1,5 +1,9 @@
 #pragma once
 
 #include "uni.h"
-#include "basic_funs.h"
 
+typedef struct EthernetII
+{
+
+
+};
