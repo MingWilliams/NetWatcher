@@ -28,6 +28,8 @@
     <ClInclude Include="uni.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="basic_funs.cpp" />
+    <ClCompile Include="datlayer.cpp" />
     <ClCompile Include="dllmain.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
