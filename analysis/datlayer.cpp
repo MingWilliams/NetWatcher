@@ -14,7 +14,7 @@ Eth2Hdr * AnalyzeProtoEth(const u_char* data, int nProto,int nThisProto)
 	for (i = 0; i < nMacSize; i++) {
 		hdr->srcMAC[i] = (byte)(data + i + nMacSize);
 	}
-	hdr->ProtocolType = (u_short)(data + (2 * nMacSize));
+	hdr->ProtocolType = (u_short)(data + nMacSize + nMacSize);
 	if (hdr->ProtocolType == datARPv4) {
 		nProto = PROTO_ARPv4;
 		nThisProto = PROTO_ETH2;
