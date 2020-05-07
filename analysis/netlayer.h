@@ -43,7 +43,7 @@ typedef struct IPv6Header
 //	byte StreamTag : 20;
 	u_int VerDETag;
 	u_short TotalLength;
-	u_short NextHeader;
+	byte NextHeader;
 	byte JumpLimit;
 	byte SrcIP[16];
 	byte DEstIP[16];
@@ -51,4 +51,6 @@ typedef struct IPv6Header
 }IP6Hdr, * pIP6Hdr;
 
 //需要手动释放内存
-IP4Hdr* AnalyzeIPv4(_In_ const u_char* data, _Out_ int nProto);
+EXPORT IP4Hdr* AnalyzeIPv4(_In_ const u_char* data, _Out_ int nProto);
+//需要手动释放内存
+EXPORT IP6Hdr* AnalyzeIPv6(_In_ const u_char* data, _Out_ int nProto);

@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="analy.h" />
     <ClInclude Include="applayer.h" />
     <ClInclude Include="basic_funs.h" />
     <ClInclude Include="datlayer.h" />
@@ -28,10 +29,13 @@
     <ClInclude Include="uni.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="analy.cpp" />
+    <ClCompile Include="applayer.cpp" />
     <ClCompile Include="basic_funs.cpp" />
     <ClCompile Include="datlayer.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="netlayer.cpp" />
+    <ClCompile Include="tralayer.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

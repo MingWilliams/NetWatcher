@@ -32,5 +32,8 @@
     <ClInclude Include="load_lib.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="basic_structs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

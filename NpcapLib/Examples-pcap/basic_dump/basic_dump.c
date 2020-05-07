@@ -116,7 +116,7 @@ int main()
 
 
 /* Callback function invoked by libpcap for every incoming packet */
-void packet_handler(u_char *param, const struct pcap_pkthdr *header, const u_char *pkt_data)
+void packet_handler(u_char *param, const struct pcap_pkthdr * header, const u_char *pkt_data)
 {
 	struct tm *ltime;
 	char timestr[16];

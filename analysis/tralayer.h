@@ -1,6 +1,7 @@
 #pragma once
 
 #include "uni.h"
+#include "netlayer.h"
 
 
 typedef struct TCPHeader
@@ -9,6 +10,7 @@ typedef struct TCPHeader
 	u_short DestPort;
 	u_long SequenceNumber;
 	u_long AckNumber;
+/*
 	byte HeaderLength : 4;
 	byte DataShift : 4;
 	byte Reserved : 3;
@@ -22,6 +24,8 @@ typedef struct TCPHeader
 	byte Reset : 1;
 	byte Syn : 1;
 	byte Fin : 1;
+*/
+	u_short Flags;
 	u_short WindowSize;
 	u_short CheckSum;
 	u_short Urgent;
@@ -55,4 +59,9 @@ typedef struct IGMPv2Header
 	byte MultiCastAddr[4];
 
 }IGMP2Hdr, * pIGMP2Hdr;
-
+//需要手动释放内存
+EXPORT TCPHdr* AnalyzeTCP(_In_ const u_char* data, _In_ int nPrevProto, _Out_ int nProto);
+//需要手动释放内存
+EXPORT UDPHdr* AnalyzeUDP(_In_ const u_char* data, _In_ int nPrevProto, _Out_ int nProto);
+//需要手动释放内存
+EXPORT ICMPHdr* AnalyzeICMP(_In_ const u_char* data,_In_ int nPrevProto, _Out_ int nProto);

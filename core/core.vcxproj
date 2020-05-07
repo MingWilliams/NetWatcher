@@ -146,6 +146,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="basic_structs.h" />
     <ClInclude Include="load_lib.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="uni.h" />

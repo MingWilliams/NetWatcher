@@ -6,6 +6,12 @@
 #include <tchar.h>
 #include <time.h>
 
+
+#define NAKED __declspec(naked)
+#define EXPORT __declspec(dllexport)
+#define ALCDECL EXPORT NAKED
+
+
 //链路层头部封装类型
 #define    datIPv4         0x0800
 #define    datARPv4        0x0806
@@ -44,4 +50,5 @@
 #define    PROTO_ICMPRES   12
 #define    PROTO_ICMPREQ   13
 #define    PROTO_HTTP      14
-#define    PROTO_FTP       15
+#define    PROTO_DNSQ      15
+#define    PROTO_DNSR      16
