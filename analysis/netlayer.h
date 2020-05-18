@@ -10,7 +10,6 @@ u_int=4
 u_int64=8
 u_long=4
 */
-
 typedef struct IPv4Header
 {
 //不应该用比特，以后再处理
@@ -33,6 +32,7 @@ typedef struct IPv4Header
 	byte SourceIP[4];
 	byte DestIP[4];
 }IP4Hdr,* pIP4Hdr;
+
 
 typedef struct IPv6Header
 {

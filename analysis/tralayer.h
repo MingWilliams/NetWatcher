@@ -3,13 +3,6 @@
 #include "uni.h"
 #include "netlayer.h"
 
-
-typedef struct TCPHeader
-{
-	u_short SrcPort;
-	u_short DestPort;
-	u_long SequenceNumber;
-	u_long AckNumber;
 /*
 	byte HeaderLength : 4;
 	byte DataShift : 4;
@@ -25,6 +18,13 @@ typedef struct TCPHeader
 	byte Syn : 1;
 	byte Fin : 1;
 */
+typedef struct TCPHeader
+{
+	u_short SrcPort;
+	u_short DestPort;
+	u_long SequenceNumber;
+	u_long AckNumber;
+
 	u_short Flags;
 	u_short WindowSize;
 	u_short CheckSum;
